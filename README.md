@@ -2,11 +2,12 @@
 This project is to create a BinaryTreeSearch ADT. We will utilize scripts to test the program and make/makefile to reduce compiling time.
 
 Tasks:
-Testing
-	-Create test script
-	-Create test files
-main.c
-binarytree.h
-	-Create struct
-	-Add functions
-binarytree.c
+1. Testing
+- Create test script
+- Create test files
+2. main.c
+3. binarytree.h
+- Create struct
+- Define methods
+4. binarytree.c
+- Implement methods
