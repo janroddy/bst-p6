@@ -1,0 +1,9 @@
+Print in order
+1 2 8 18 23 33 34 45 67 76
+Print pre order
+8 2 1 34 33 23 18 67 45 76
+Print post order
+1 2 18 23 33 45 76 67 34 8
+FOUND 33
+Number of elements in tree: 10
+Tree height: 4
