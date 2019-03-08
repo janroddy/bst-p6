@@ -67,6 +67,7 @@ void insert(binary_tree* bt, int item) {
 			}
 		}
 	}
+	bt->size++;
 }
 
 void printinorder(binary_tree* bt) {
