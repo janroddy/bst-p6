@@ -19,20 +19,29 @@ void insert(binary_tree* bt, int item) {
 
 }
 void printinorder(binary_tree* bt) {
-	node* root=bt->root;
+	node* curr = bt->root;
 
-	if (root == NULL) {
+	if (curr == NULL) {
         return;
 	}
 
-    printinorder(root->left);
-    printf("%d ", root->data);
-	printinorder(root->right);
+    printinorder(curr->left);
+    printf("%d ", curr->data);
+	printinorder(curr->right);
 }
 
 void printpreorder(binary_tree* bt) {
+	node* curr = bt->root;
 
+	if (curr == NULL) {
+        return;
+	}
+
+    printf("%d ", curr->data);
+    printpreorder(curr->left);
+	printpreorder(curr->right);
 }
+
 void printpostorder(binary_tree* bt) {
 
 }
