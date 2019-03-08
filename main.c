@@ -7,14 +7,10 @@
 
 //testing binary_tree construction 
 int main () {
-	binary_tree bt; 
-	int i = 5; 
-
-	initialize(&bt); 
-	bt.root = newNode(i); 
-	printNode(bt.root); 
+	
 
 
+	
 
 return 0;
 
