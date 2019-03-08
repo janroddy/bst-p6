@@ -2,12 +2,29 @@
 This project is to create a BinaryTreeSearch ADT. We will utilize scripts to test the program and make/makefile to reduce compiling time.
 
 Tasks:
+
 1. Testing
-- Create test script
-- Create test files
-2. main.c
+- Create test script - Levi
+- Create test files - Levi
+	f1
+	f2
+	f3
+
+2. main.c - TBD (Let's regroup on Tuesday during class and make sure we have everything working) 
+
 3. binarytree.h
-- Create struct
-- Define methods
+- Create struct - Jan 
+- Define methods - Jan 
+
 4. binarytree.c
-- Implement methods
+- Implement methods:
+	void initialize(binary_tree* bt); - Jan 
+	bool search(binary_tree* bt, int key); - Jan 
+	void insert(binary_tree* bt, int item); - Jan 
+	void printinorder(binary_tree* bt); - Yilin 
+	void printpreorder(binary_tree* bt); - Yilin 
+	void printpostorder(binary_tree* bt); - Yilin 
+	int btsize(binary_tree* bt); - Wit
+	int treeheight(binary_tree* bt); - Wit
+
+5. MakeFile - Yilin? 
