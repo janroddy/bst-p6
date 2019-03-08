@@ -9,12 +9,8 @@
 int main () {
 	binary_tree bt; 
 	bool found;
-	int i = 5; 
 
 	initialize(&bt); 
-	bt.root = newNode(i); 
-	printNode(bt.root);
-
 
 	//output
 	printf("Print in order\n");
@@ -34,6 +30,10 @@ int main () {
 	}
 	printf("Number of elements in tree: %d\n", btsize(&bt));
 	printf("Tree height: %d\n", treeheight(&bt));
+	
+
+
+	
 
 	return 0;
 
