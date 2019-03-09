@@ -1,0 +1,9 @@
+Print in order
+11 38 44 56 57 68 75 77 81 94
+Print pre order
+68 11 56 57 44 81 38 77 94 75
+Print post order
+38 44 57 56 11 75 77 94 81 68
+FOUND 38
+Number of elements in tree: 10
+Tree height: 4

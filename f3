@@ -1,0 +1,8 @@
+Print in order
+2 8 9 24 64 45 67 76
+Print pre order
+8 2 34 9 24 67 45 76
+Print post order
+2 24 9 45 76 67 34 8
+Number of elements in tree: 8
+Tree height: 3
