@@ -11,5 +11,5 @@ node.o : node.h
 		gcc -Wall -c node.c
 
 clean:
-		rm *.o myprog.exe
+		rm *.o myprog.exe file*
 		ls
