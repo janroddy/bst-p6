@@ -10,7 +10,7 @@ if [ -z "$result1" ]; then
 	echo "Test 1 success"
 else
 	echo "Test 1 failed"
-	echo $result
+	echo $result1
 fi
 
 ./myprog.exe myfile2.txt > file2
@@ -21,7 +21,7 @@ if [ -z "$result2" ]; then
 	echo "Test 2 success"
 else
 	echo "Test 2 failed"
-	echo $result
+	echo $result2
 fi
 
 ./myprog.exe myfile3.txt > file3
@@ -32,5 +32,5 @@ if [ -z "$result3" ]; then
 	echo "Test 3 success"
 else
 	echo "Test 3 failed"
-	echo $result
+	echo $result3
 fi
