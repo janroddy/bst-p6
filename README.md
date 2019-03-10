@@ -1,16 +1,17 @@
 # bst-p6
-This project is to create a BinaryTreeSearch ADT. We will utilize scripts to test the program and make/makefile to reduce compiling time.
+This project is to create a BinarySearchTree Abstract Data Type. We will utilize scripts to test the program and make/makefile to reduce compiling time.
 
 Tasks:
 
 1. Testing
-- Create test script - Levi
-- Create test files - Levi
+- Create test script - Levi - done
+- Create test files - Levi - done
 	f1
 	f2
 	f3
 
-2. main.c - TBD (Let's regroup on Tuesday during class and make sure we have everything working) 
+2. main.c - TBD (Let's regroup on Tuesday during class and make sure we have everything working)
+- Add command line arguments and file handling - Levi
 
 3. binarytree.h
 - Create struct - Jan 
