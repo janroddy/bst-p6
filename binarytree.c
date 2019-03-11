@@ -112,6 +112,15 @@ int btsize(binary_tree* bt) {
 }
 
 int treeheight(binary_tree* bt){
+	if(bt == NULL){
+		return 0;
+	}
+	else if(bt->root->left->data < bt->root->right->data){
+		return treeheight(bt->root->left->data) + 1;
+	}
+	else{
+		return treeheight(bt->root->right->data) + 1;
+	}
 
 } 
 
