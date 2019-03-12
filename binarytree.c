@@ -127,14 +127,24 @@ int btsize(binary_tree* bt) {
 
 int treeheight(node* root){
 	if(root == NULL){
-		return 0;
+		return -1;
 	}
-	else if(root->left->data < root->right->data){
+	/*else if(root->left->data < root->right->data){
 		return treeheight(root->left) + 1;
 	}
 	else{
 		return treeheight(root->right) + 1;
-	}
+	}*/
+	else { 
+       /* compute the depth of each subtree */
+       int lDepth = treeheight(root->left); 
+       int rDepth = treeheight(root->right); 
+  
+       /* use the larger one */
+       if (lDepth > rDepth)  
+           return(lDepth+1); 
+       else return(rDepth+1); 
+   } 
 
 }
 
