@@ -18,9 +18,14 @@ int main (int argc, char* argv[]) {
 	FILE* inFile = NULL; // File pointer
 	inFile = fopen(argv[1], "r");
 
+	if(argc > 2){
+		printf("Too many command line arguments.\n");
+		return 1;
+	}
+
 	if (inFile == NULL) {
-		printf("Could not open file.\n");
-		return -1; // -1 indicates error
+		printf("Input file does not exist.\n");
+		return 1; // -1 indicates error
 	}
 
 	// Read integers from file, add to binary tree
