@@ -52,7 +52,7 @@ int main (int argc, char* argv[]) {
 		printf("FOUND 38\n");
 	}
 	printf("Number of elements in tree: %d\n", btsize(&bt));
-	printf("Tree height: %d\n", treeheight(&bt));
+	printf("Tree height: %d\n", treeheight(bt.root));
 	
 
 
