@@ -126,15 +126,15 @@ int btsize(binary_tree* bt) {
 	return bt->size;
 }
 
-int treeheight(binary_tree* bt){
-	if(bt == NULL){
+int treeheight(node* root){
+	if(root == NULL){
 		return 0;
 	}
-	else if(bt->root->left->data < bt->root->right->data){
-		return treeheight(bt->root->left->data) + 1;
+	else if(root->left->data < root->right->data){
+		return treeheight(root->left) + 1;
 	}
 	else{
-		return treeheight(bt->root->right->data) + 1;
+		return treeheight(root->right) + 1;
 	}
 
 }
