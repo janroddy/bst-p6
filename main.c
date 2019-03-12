@@ -6,13 +6,36 @@
 #include "node.h"
 
 //testing binary_tree construction 
-int main () {
+int main (int argc, char* argv[]) {
+	// Variable Declarations
 	binary_tree bt; 
 	bool found;
+	int number = 0;
 
-	initialize(&bt); 
+	initialize(&bt);
 
-	//output
+	// File Handling
+	FILE* inFile = NULL; // File pointer
+	inFile = fopen(argv[1], "r");
+
+	if(argc > 2){
+		printf("Too many command line arguments.\n");
+		return 1;
+	}
+
+	if (inFile == NULL) {
+		printf("Input file does not exist.\n");
+		return 1; // -1 indicates error
+	}
+
+	// Read integers from file, add to binary tree
+	fscanf(inFile, "%d", &number);
+	while (!feof(inFile)) {
+		insert(&bt, number);
+		fscanf(inFile, "%d", &number);
+	}
+
+	// Output
 	printf("Print in order\n");
 	printinorder(&bt);
 	printf("\nPrint pre order\n");

@@ -70,41 +70,56 @@ void insert(binary_tree* bt, int item) {
 	bt->size++;
 }
 
-void printinorder(binary_tree* bt) {
-	node* curr = bt->root;
-
+void inorder(node* curr) {
 	if (curr == NULL) {
         return;
 	}
 
-    printinorder(curr->left); //FIXME.can't recursive because it need to pass a tree
+    inorder(curr->left);
     printf("%d ", curr->data);
-	printinorder(curr->right); //FIXME.can't recursive because it need to pass a tree
+	inorder(curr->right);
+
+}
+
+void printinorder(binary_tree* bt) {
+	node* curr = bt->root;
+	inorder(curr);
+
+	return;
+}
+
+void preorder(node* curr) {
+	if (curr == NULL) {
+    	return;
+	}
+
+    printf("%d ", curr->data);
+    preorder(curr->left); 
+	preorder(curr->right);
 }
 
 void printpreorder(binary_tree* bt) {
 	node* curr = bt->root;
+	preorder(curr);
 
+	return;
+}
+
+void postorder(node* curr) {
 	if (curr == NULL) {
         return;
 	}
 
-    printf("%d ", curr->data);
-    printpreorder(curr->left); //FIXME.can't recursive because it need to pass a tree
-	printpreorder(curr->right); //FIXME.can't recursive because it need to pass a tree
+    postorder(curr->left);
+	postorder(curr->right);
+	printf("%d ", curr->data);
 }
 
 void printpostorder(binary_tree* bt) {
 	node* curr = bt->root;
+	postorder(curr);
 
-	if (curr == NULL) {
-        return;
-	}
-
-    printpostorder(curr->left); //FIXME.can't recursive because it need to pass a tree
-	printpostorder(curr->right); //FIXME.can't recursive because it need to pass a tree
-	printf("%d ", curr->data);
-
+	return;
 }
 
 int btsize(binary_tree* bt) {
@@ -122,5 +137,5 @@ int treeheight(node* root){
 		return treeheight(root->right) + 1;
 	}
 
-} 
+}
 
