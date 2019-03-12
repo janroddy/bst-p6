@@ -25,7 +25,7 @@ Tasks:
 	void printinorder(binary_tree* bt); - Yilin 
 	void printpreorder(binary_tree* bt); - Yilin 
 	void printpostorder(binary_tree* bt); - Yilin 
-	int btsize(binary_tree* bt); - Wit
+	int btsize(binary_tree* bt); -Yilin
 	int treeheight(binary_tree* bt); - Wit
 
-5. MakeFile - Yilin? 
+5. MakeFile - Yilin
