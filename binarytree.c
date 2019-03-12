@@ -30,7 +30,6 @@ bool search(binary_tree* bt, int key) {
 			cur = cur->right; 
 		}
 	}
-	printf("binary_tree is empty.");
 	return false; 	
 }
 
