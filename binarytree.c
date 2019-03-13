@@ -71,13 +71,12 @@ void insert(binary_tree* bt, int item) {
 
 void inorder(node* curr) {
 	if (curr == NULL) {
-        return;
+    return;
 	}
 
-    inorder(curr->left);
-    printf("%d ", curr->data);
+  inorder(curr->left);
+  printf("%d ", curr->data);
 	inorder(curr->right);
-
 }
 
 void printinorder(binary_tree* bt) {
@@ -89,11 +88,11 @@ void printinorder(binary_tree* bt) {
 
 void preorder(node* curr) {
 	if (curr == NULL) {
-    	return;
+    return;
 	}
 
-    printf("%d ", curr->data);
-    preorder(curr->left); 
+  printf("%d ", curr->data);
+  preorder(curr->left); 
 	preorder(curr->right);
 }
 
@@ -106,10 +105,10 @@ void printpreorder(binary_tree* bt) {
 
 void postorder(node* curr) {
 	if (curr == NULL) {
-        return;
+    return;
 	}
 
-    postorder(curr->left);
+  postorder(curr->left);
 	postorder(curr->right);
 	printf("%d ", curr->data);
 }
@@ -126,24 +125,18 @@ int btsize(binary_tree* bt) {
 }
 
 int treeheight(node* root){
-	if(root == NULL){
+	if (root == NULL){
 		return -1;
 	}
-	/*else if(root->left->data < root->right->data){
-		return treeheight(root->left) + 1;
-	}
-	else{
-		return treeheight(root->right) + 1;
-	}*/
 	else { 
-       /* compute the depth of each subtree */
-       int lDepth = treeheight(root->left); 
-       int rDepth = treeheight(root->right); 
+    // compute the depth of left and right subtrees 
+    int lDepth = treeheight(root->left); 
+    int rDepth = treeheight(root->right); 
   
-       /* use the larger one */
-       if (lDepth > rDepth)  
-           return(lDepth+1); 
-       else return(rDepth+1); 
+    // return depth of larger subtree
+    if (lDepth > rDepth)  
+      return(lDepth + 1); 
+    else return(rDepth + 1); 
    } 
 
 }
