@@ -1,9 +1,9 @@
 Print in order
-11 38 44 56 57 68 75 77 81 94
+11 38 44 56 57 68 75 77 81 94 
 Print pre order
-68 11 56 44 38 57 81 77 75 94
+68 11 56 44 38 57 81 77 75 94 
 Print post order
-38 44 57 56 11 75 77 94 81 68
+38 44 57 56 11 75 77 94 81 68 
 FOUND 38
 Number of elements in tree: 10
 Tree height: 4
